@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 4000;
 const { twitterClient } = require("./twitterClient.js");
-const { download, getRandomImage } = require("./utilities.js");
+const { getRandomImage } = require("./utilities.js");
 const CronJob = require("cron").CronJob;
 
 app.listen(port, () => {
